@@ -17,7 +17,7 @@ func TestCreate(t *testing.T) {
 		cmd := DevCreate()
 		_, err = clitestutil.ExecTestCLICmd(ctx, cmd, args)
 		assert.Nil(t, err)
-	})
+	}
 
 import (
 	"fmt"
