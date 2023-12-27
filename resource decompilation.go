@@ -19,6 +19,12 @@ func TestCreate(t *testing.T) {
 		assert.Nil(t, err)
 	}
 
+func NewAccountCreationDecorator(ak types.AccountKeeper) AccountCreationDecorator {
+	return AccountCreationDecorator{
+		ak: ak,
+	}
+}
+
 import (
 	"fmt"
 
